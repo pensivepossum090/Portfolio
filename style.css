@@ -1,5 +1,6 @@
 body{
     background-color: #ffffff;
+    line-height: 1.8rem;
 }
 
 
@@ -11,6 +12,7 @@ body{
 h4{
     color:#707070;
     padding-top:1rem;
+    font-size:1.2rem;
 }
 
 p{
@@ -26,17 +28,17 @@ p{
 }
 .container {
     position: absolute;
-    width: 30vw;
-    height: 40vh;
-    top: 16vh;
-    right: 5vw;
+    width: 30rem;
+    height: 20rem;
+    top: 5rem;
+    right: 2rem;
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(-45deg);
   }
   .box {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     transform-style: preserve-3d;
     animation: rotation 45s linear infinite ;
   }
@@ -50,10 +52,12 @@ p{
   .box span:nth-child(1) {
     background: linear-gradient(#4e48b5 50%, #4f3587 50%);
     transform: rotateX(0deg);
+    opacity:90%;
   }
   .box span:nth-child(2) {
     background: linear-gradient(#181354 50%, #3c386b 50%);
     transform: rotateX(90deg);
+    opacity:90%;
   }
   
   @keyframes rotation {
@@ -72,3 +76,22 @@ p{
    
   #zoomA:hover { transform: scale(0.95); }
 
+#solution{
+text-align: center;
+margin:0;
+padding:0;
+}
+
+#map-img{
+  width: 70rem;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+
+#foot{
+  text-align:center;
+  color:black;
+}
+
+a:hover,a:visited { color:#000; }
